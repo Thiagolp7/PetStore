@@ -1,0 +1,45 @@
+@use '_colors';
+@use '_typograph';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: typograph.$font-primary;
+}
+
+html {
+  @media screen and (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+
+  @media screen and (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: colors.$primary;
+  color: var(--white);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem typograph.$font-primary;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
