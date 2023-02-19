@@ -1,0 +1,13 @@
+@use '@/styles/_colors';
+
+.header {
+  width: 100%;
+  background-color: colors.$neutral;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(73.1875rem + 20px);
+  padding: 20px 20px;
+  margin: 0 auto;
+}
