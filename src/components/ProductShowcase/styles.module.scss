@@ -1,0 +1,25 @@
+@use '@/styles/_colors';
+
+.section {
+  display: flex;
+  flex-direction: column;
+
+  .showCase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .title {
+      color: colors.$contrast2;
+      text-transform: uppercase;
+    }
+
+    .productWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 60px;
+      column-gap: 10px;
+    }
+  }
+}

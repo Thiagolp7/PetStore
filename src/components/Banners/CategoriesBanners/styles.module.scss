@@ -1,8 +1,8 @@
-@use '@/styles/_colors';
+@use '@/styles/_libary';
 
 .section {
   width: 100%;
-  background-color: colors.$secondary;
+  background-color: libary.$secondary;
 
   .wrapper {
     display: flex;

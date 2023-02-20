@@ -17,6 +17,16 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'image.cachorrogato.com.br',
         pathname: '/**/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'love.doghero.com.br',
+        pathname: '/**/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'user-images.githubusercontent.com',
+        pathname: '/**/**/**'
       }
     ]
   }
