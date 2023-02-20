@@ -1,0 +1,21 @@
+@use '@/styles/_colors';
+
+.container {
+  height: 100%;
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: colors.$neutral;
+    transition: 0.2s ease-in-out;
+    padding: 10px 0;
+    height: 100%;
+    padding: 10px;
+
+    &:hover {
+      color: colors.$primary;
+      background-color: colors.$secondary;
+    }
+  }
+}

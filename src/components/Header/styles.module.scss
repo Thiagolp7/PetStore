@@ -4,6 +4,8 @@
   width: 100%;
   background-color: colors.$neutral;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {

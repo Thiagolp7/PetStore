@@ -1,0 +1,14 @@
+@use '@/styles/_colors';
+
+.navContainer {
+  background-color: colors.$primary;
+
+  .wrapper {
+    height: 62px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0;
+  }
+}

@@ -1,6 +1,7 @@
 import Button from '../Button'
 import Logo from '../Logo'
 import SearchBar from '../Searchbar'
+import NavBar from './NavBar'
 import s from './styles.module.scss'
 
 export default function Header() {
@@ -17,6 +18,7 @@ export default function Header() {
           <Button icon="cart" highLight="99" />
         </div>
       </div>
+      <NavBar />
     </header>
   )
 }
