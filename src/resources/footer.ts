@@ -57,14 +57,14 @@ export const contactList = [
   {
     title: 'Pagamento',
     cardImages: [
-      '/../public/images/paymentsCards/american.png',
-      '/../public/images/paymentsCards/aura.png',
-      '/../public/images/paymentsCards/boleto.png',
-      '/../public/images/paymentsCards/dinersclub.png',
-      '/../public/images/paymentsCards/elo.png',
-      '/../public/images/paymentsCards/hipercard.png',
-      '/../public/images/paymentsCards/mastercard.png',
-      '/../public/images/paymentsCards/visa.png'
+      '/images/paymentsCards/american.png',
+      '/images/paymentsCards/aura.png',
+      '/images/paymentsCards/boleto.png',
+      '/images/paymentsCards/dinersclub.png',
+      '/images/paymentsCards/elo.png',
+      '/images/paymentsCards/hipercard.png',
+      '/images/paymentsCards/mastercard.png',
+      '/images/paymentsCards/visa.png'
     ]
   }
 ]
