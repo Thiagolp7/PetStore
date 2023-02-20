@@ -1,3 +1,5 @@
+import { BannerCardProps } from '@/@types/MiddleBanners'
+
 export const categoriesBannersData = [
   {
     categoryName: 'Rações',
@@ -16,5 +18,22 @@ export const categoriesBannersData = [
     imgUrl:
       'https://image.cachorrogato.com.br/textimages/acessorios-para-cachorros.jpg',
     categorylink: '#acessorios'
+  }
+]
+
+export const middleBannersData: BannerCardProps[] = [
+  {
+    text: 'Para gatos',
+    textOrientation: 'right',
+    imgUrl:
+      'https://www.petz.com.br/blog/wp-content/uploads/2017/05/racao-para-cachorro-1280x720.jpg',
+    link: '#racoes'
+  },
+  {
+    text: 'Para cachorros',
+    textOrientation: 'left',
+    imgUrl:
+      'https://www.petz.com.br/blog/wp-content/uploads/2017/05/racao-para-cachorro-1280x720.jpg',
+    link: '#racoes'
   }
 ]

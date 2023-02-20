@@ -1,0 +1,69 @@
+@use '@/styles/_colors';
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 570px;
+  max-height: 280px;
+  overflow: hidden;
+  position: relative;
+
+  a {
+    font-size: 1.375rem;
+    font-weight: 400;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba($color: colors.$overlay, $alpha: 0.3);
+    transition: 0.2s ease-in-out;
+
+    span {
+      color: colors.$neutral;
+      background-color: colors.$secondary;
+
+      position: absolute;
+      bottom: 8%;
+
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.625rem 0.9375rem;
+
+      &.left {
+        left: 0;
+      }
+
+      &.right {
+        right: 0;
+      }
+
+      @keyframes jumping {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    }
+
+    &:hover {
+      background-color: rgba($color: colors.$overlay, $alpha: 0.4);
+
+      span {
+        animation: jumping 1s forwards infinite;
+      }
+    }
+  }
+
+  .bannerImg {
+    object-fit: cover;
+  }
+}

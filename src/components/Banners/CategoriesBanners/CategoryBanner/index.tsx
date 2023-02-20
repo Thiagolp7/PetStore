@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import s from './styles.module.scss'
-import { CategoryBannerProps } from '../../types/categoryBanners'
+import { CategoryBannerProps } from '../../../../@types/categoryBanners'
 
 export default function CategoryBanner({
   categoryName,

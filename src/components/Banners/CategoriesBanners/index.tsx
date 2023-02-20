@@ -1,4 +1,4 @@
-import { CategoriesBannersProps } from '../types/categoryBanners'
+import { CategoriesBannersProps } from '../../../@types/categoryBanners'
 import CategoryBanner from './CategoryBanner'
 import s from './styles.module.scss'
 

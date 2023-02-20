@@ -3,8 +3,9 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Header from '@/components/Header/'
 import Footer from '@/components/Footer'
-import CategoriesBanners from '@/components/CategoriesBanners'
-import { categoriesBannersData } from '@/resources/banners'
+import CategoriesBanners from '@/components/Banners/CategoriesBanners'
+import { categoriesBannersData, middleBannersData } from '@/resources/banners'
+import MiddleBanners from '@/components/Banners/MiddleBanners'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,8 +21,9 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <CategoriesBanners banners={categoriesBannersData} />
+        <MiddleBanners banners={middleBannersData} />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
