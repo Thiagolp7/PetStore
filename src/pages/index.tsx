@@ -3,6 +3,8 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Header from '@/components/Header/'
 import Footer from '@/components/Footer'
+import CategoriesBanners from '@/components/CategoriesBanners'
+import { categoriesBannersData } from '@/resources/banners'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <CategoriesBanners banners={categoriesBannersData} />
+      </main>
       <Footer />
     </>
   )
