@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-width: 17.1875rem;
+
+  h2 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    span {
+      margin-left: 5px;
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    min-width: 200px;
+    gap: 10px;
+
+    h2 {
+      font-size: 0.625rem;
+    }
+  }
+}

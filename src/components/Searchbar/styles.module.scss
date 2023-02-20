@@ -47,4 +47,10 @@
       color: colors.$contrast2;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    & {
+      display: none;
+    }
+  }
 }

@@ -1,0 +1,19 @@
+.logoWrapper {
+  width: 100%;
+  max-width: 16.9375rem;
+
+  img {
+    max-width: inherit;
+    max-height: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 12.5rem;
+    max-height: 3.1362rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    max-width: 150px;
+    max-height: 2.3525rem;
+  }
+}

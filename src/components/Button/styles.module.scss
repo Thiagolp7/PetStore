@@ -2,8 +2,15 @@
 
 .container {
   position: relative;
+  min-width: 40px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
   .button {
+    width: 100%;
     background-color: transparent;
     color: #000;
     padding: 0.125rem;
@@ -84,5 +91,13 @@
         }
       }
     }
+
+    @media screen and (max-width: 520px) {
+      left: 0;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    position: initial;
   }
 }

@@ -29,7 +29,12 @@ export default function Button({
 
   return (
     <div className={s.container}>
-      <button className={`${s.button}`} {...props} onClick={HandleClick}>
+      <button
+        className={`${s.button}`}
+        {...props}
+        onClick={HandleClick}
+        onBlur={() => setIsOpen(false)}
+      >
         {children}
         <Icon name={icon} className={s.icon} />
         {!!highLight && <div className={s.highLight}>{highLight}</div>}
