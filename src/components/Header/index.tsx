@@ -18,7 +18,7 @@ export default function Header() {
           <Button icon="cart" highLight="99" />
         </div>
       </div>
-      {/* <NavBar /> */}
+      <NavBar />
     </header>
   )
 }
