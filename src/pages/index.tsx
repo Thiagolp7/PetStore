@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.scss'
+import s from './Home.module.scss'
 import Header from '@/components/Header/'
 import Footer from '@/components/Footer'
 import CategoriesBanners from '@/components/Banners/CategoriesBanners'
@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className={styles.main}>
+      <main className={s.main}>
         <CategoriesBanners banners={categoriesBannersData} />
         <ProductShowcase title="Novidades" products={productNews} />
         <MiddleBanners banners={middleBannersData} />

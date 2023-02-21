@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import BenefitsItem from './BenefitsItem'
 import { benefitsData, contactList, socialLinks } from '@/resources/footer'
-import serieLogoSvg from '@/../public/images/serie-logo.svg'
+import serieLogoSvg from '../../../public/icons/serie-logo.svg'
 import Logo from '../Logo'
 import Icon from '../Icon'
 import s from './styles.module.scss'
@@ -99,7 +99,13 @@ export default function Footer() {
         </div>
         <div className={`container ${s.developedBy}`}>
           <p>tecnologia e desenvolvimento:</p>
-          <Image alt="Seri.e logo" src={serieLogoSvg} quality={100} />
+          <a
+            href="https://seriedesign.com.br/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Image alt="Seri.e logo" src={serieLogoSvg} quality={100} />
+          </a>
         </div>
       </section>
     </footer>

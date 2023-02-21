@@ -3,7 +3,8 @@
 .categoryBanner {
   position: relative;
   width: 100%;
-  max-width: 23.75rem;
+  max-width: 23.125rem;
+  min-width: 23.125rem;
   max-height: 6.25rem;
   overflow: hidden;
 
@@ -37,5 +38,10 @@
   .categoryImg {
     object-fit: cover;
     object-position: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 320px;
+    min-width: 320px;
   }
 }

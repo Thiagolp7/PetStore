@@ -1,10 +1,13 @@
 @use '@/styles/_colors';
 
 .productCard {
-  max-width: 280px;
-  max-height: 365px;
+  max-width: 17.5rem;
+  max-height: 23.4375rem;
+  overflow: hidden;
+  border: 1px solid transparent;
 
   &:hover {
+    border: 1px solid colors.$contrast;
     .imageContainer {
       .overlay {
         opacity: 1;
@@ -13,16 +16,12 @@
         }
       }
     }
-
-    .productDesc {
-      border: 1px solid colors.$contrast;
-    }
   }
 
   .imageContainer {
     position: relative;
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 17.5rem;
+    max-height: 17.5rem;
 
     .discountBadge,
     .isNewBadge {
@@ -35,7 +34,7 @@
       top: 0;
       left: 0;
       z-index: 2;
-      padding: 5px 10px;
+      padding: 0.3125rem 0.625rem;
     }
 
     .isNewBadge {
@@ -44,11 +43,18 @@
       top: unset;
       right: 0;
       bottom: 0;
+
+      @media screen and (max-width: 768px) {
+        right: unset;
+        bottom: unset;
+        left: 0;
+        top: 2.0625rem;
+      }
     }
 
     .productImage {
-      max-width: 280px;
-      max-height: 280px;
+      max-width: 17.5rem;
+      max-height: 17.5rem;
     }
 
     .overlay {
@@ -71,11 +77,22 @@
         background-color: colors.$secondary;
         text-transform: uppercase;
         border: none;
-        padding: 10px 15px;
+        padding: 0.625rem 0.9375rem;
         opacity: 0;
         transition: 0.2s ease-in-out;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 700;
+      }
+
+      @media screen and (max-width: 768px) {
+        opacity: 1;
+        background-color: transparent;
+        align-items: flex-end;
+
+        button {
+          opacity: 1;
+          width: 90%;
+        }
       }
     }
   }
@@ -86,24 +103,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10px 10px;
-    border: 1px solid transparent;
+    padding: 0 0.625rem 0.9375rem;
+
     transition: 0.4s ease-in-out;
 
     .productName {
       font-size: 0.875rem;
       font-weight: 400;
       color: colors.$contrast2;
-      margin-top: 15px;
+      margin-top: 0.9375rem;
     }
 
     .productPrices {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 15px;
+      gap: 0.9375rem;
       color: colors.$contrast2;
-      margin: 8px 0 2px;
+      margin: 0.5rem 0 0.125rem;
 
       .listPrice,
       .sellingPrice {
@@ -123,6 +140,25 @@
       color: colors.$contrast2;
       font-size: 0.875rem;
       font-weight: 400;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    border: 1px solid colors.$contrast;
+
+    &:hover {
+      .imageContainer {
+        .overlay {
+          opacity: 1;
+          button {
+            opacity: 1;
+          }
+        }
+      }
+
+      .productDesc {
+        border: 1px solid colors.$contrast;
+      }
     }
   }
 }
