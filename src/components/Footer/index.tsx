@@ -5,6 +5,7 @@ import serieLogoSvg from '../../../public/icons/serie-logo.svg'
 import Logo from '../Logo'
 import Icon from '../Icon'
 import s from './styles.module.scss'
+import FloatContainer from '../FloatContainer'
 
 export default function Footer() {
   return (
@@ -108,6 +109,7 @@ export default function Footer() {
           </a>
         </div>
       </section>
+      <FloatContainer />
     </footer>
   )
 }

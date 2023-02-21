@@ -1,0 +1,83 @@
+@use '@/styles/_colors';
+
+.container {
+  width: 100%;
+  max-width: 100px;
+  padding-bottom: 50px;
+
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 40px;
+  }
+}
+
+.wppContainer,
+.backtoTopContainer {
+  $size: 55px;
+  $diff: 22px;
+  width: $size;
+  height: $size;
+  color: colors.$neutral;
+  background-color: colors.$whatsAppBg;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 3px 5px rgba($color: colors.$black, $alpha: 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    width: calc($size - $diff);
+    height: calc($size - $diff);
+  }
+
+  @keyframes bounce {
+    50%,
+    100% {
+      transform: translate3d(-0.5px, 0, 0);
+    }
+
+    60%,
+    90% {
+      transform: translate3d(1px, 0, 0);
+    }
+
+    70%,
+    75%,
+    80% {
+      transform: translate3d(-2px, 0, 0);
+    }
+
+    72%,
+    78% {
+      transform: translate3d(2px, 0, 0);
+    }
+  }
+}
+
+.wppContainer {
+  animation: bounce 2s infinite alternate;
+  animation-delay: 10s;
+}
+
+.backtoTopContainer {
+  background-color: colors.$contrast2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in;
+
+  &.isActive {
+    visibility: visible;
+    opacity: 1;
+  }
+}

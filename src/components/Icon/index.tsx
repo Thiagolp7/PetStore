@@ -1,6 +1,8 @@
 import { HiUser } from 'react-icons/hi'
 import { RiShoppingCart2Fill } from 'react-icons/ri'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { BsWhatsapp } from 'react-icons/bs'
+import { ImArrowUp2 } from 'react-icons/im'
 
 interface IconProps {
   name?: string
@@ -23,6 +25,12 @@ export default function Icon({ name, className }: IconProps) {
     }
     case 'twitter': {
       return <FaTwitter className={className} />
+    }
+    case 'whatsapp': {
+      return <BsWhatsapp className={className} />
+    }
+    case 'arrowUp': {
+      return <ImArrowUp2 className={className} />
     }
 
     default: {
