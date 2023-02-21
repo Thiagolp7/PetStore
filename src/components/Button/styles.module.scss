@@ -18,10 +18,10 @@
     position: relative;
 
     .highLight {
-      width: 25px;
-      height: 25px;
+      width: 1.5625rem;
+      height: 1.5625rem;
       background-color: colors.$secondary;
-      padding: 2px 2px;
+      padding: 0.125rem 0.125rem;
       border-radius: 50%;
       color: colors.$neutral;
       font-weight: 700;
@@ -34,6 +34,22 @@
       width: 2.5rem;
       height: 2.5rem;
       color: colors.$contrast2;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 2.125rem;
+
+      .highLight {
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 0.75rem;
+      }
+
+      .icon {
+        width: 30px;
+        height: 30px;
+        color: colors.$contrast2;
+      }
     }
   }
 
@@ -98,7 +114,10 @@
       width: 100%;
     }
   }
+
   @media screen and (max-width: 520px) {
+    width: fit-content;
     position: initial;
+    gap: 0;
   }
 }

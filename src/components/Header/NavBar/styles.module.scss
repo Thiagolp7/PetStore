@@ -2,13 +2,26 @@
 
 .navContainer {
   background-color: colors.$primary;
+  display: flex;
+  gap: 10px;
+
+  :global(.container) {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+  }
 
   .wrapper {
     height: 62px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 0.625rem;
     padding: 0;
+    flex: 1;
+  }
+
+  @media screen and (max-width: 950px) {
+    display: none;
   }
 }

@@ -24,7 +24,7 @@ export const categories = [
     link: '#categoria6'
   },
   {
-    text: 'Shappos',
+    text: 'Shampoo',
     link: '#categoria6'
   }
 ]

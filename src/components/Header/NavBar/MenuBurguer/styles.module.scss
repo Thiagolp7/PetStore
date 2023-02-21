@@ -1,0 +1,124 @@
+@use '@/styles/_colors';
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.open {
+    .menuFloat {
+      height: 100%;
+      border-bottom: 1px solid colors.$contrast;
+
+      @media screen and (max-width: 950px) {
+        height: auto;
+
+        .menuWrapper {
+          padding: 15px 25px;
+          border: 2px solid #cccccc;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  &.mobile {
+    @media screen and (min-width: 950px) {
+      display: none;
+    }
+  }
+
+  .menuFloat {
+    position: absolute;
+    background-color: colors.$neutral;
+    right: 0;
+    top: 100%;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+
+    .menuWrapper {
+      padding: 60px 40px;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      overflow: hidden;
+
+      a {
+        color: colors.$secondary;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          color: colors.$primary;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 90%;
+    background: colors.$secondary;
+    border-radius: 9px;
+    opacity: 1;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 15%;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(4) {
+      bottom: 15%;
+    }
+  }
+
+  &.open {
+    span {
+      &:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        // left: 50%;
+      }
+
+      &:nth-child(2) {
+        top: 45%;
+        left: 5%;
+        transform: rotate(45deg) translate(0%, 0%);
+      }
+
+      &:nth-child(3) {
+        top: 45%;
+        left: 5%;
+        transform: rotate(-45deg) translate(0%, 0%);
+      }
+
+      &:nth-child(4) {
+        top: 10%;
+        width: 0%;
+        // left: 50%;
+      }
+    }
+  }
+}

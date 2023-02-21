@@ -2,12 +2,14 @@ import Button from '../Button'
 import Logo from '../Logo'
 import SearchBar from '../Searchbar'
 import NavBar from './NavBar'
+import MenuBurguer from './NavBar/MenuBurguer'
 import s from './styles.module.scss'
 
 export default function Header() {
   return (
     <header className={s.header}>
       <div className={s.container}>
+        <MenuBurguer mobile />
         <SearchBar />
         <Logo />
         <div className={s.controls}>
