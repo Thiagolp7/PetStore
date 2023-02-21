@@ -1,7 +1,7 @@
 import { SlArrowLeft } from 'react-icons/sl'
 import { SlArrowRight } from 'react-icons/sl'
 import './style.module.scss'
-import { ButtonHTMLAttributes } from 'react'
+import { ButtonHTMLAttributes, Children } from 'react'
 
 interface ArrowsProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   typeArrow: string

@@ -11,8 +11,8 @@ export default function ProductShowcase({
       <div className={`container ${s.showCase}`}>
         <h2 className={s.title}>{title}</h2>
         <div className={s.productWrapper}>
-          {products.map(product => {
-            return <Product key={product.name} {...product} />
+          {products.map((product, index) => {
+            return <Product key={product.name + index + product} {...product} />
           })}
         </div>
       </div>
