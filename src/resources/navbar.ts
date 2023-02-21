@@ -1,30 +1,30 @@
 export const categories = [
   {
-    text: 'Categoria 1',
+    text: 'Para cachorros',
     link: '#categoria1'
   },
   {
-    text: 'Categoria 2',
+    text: 'Para gatos',
     link: '#categoria2'
   },
   {
-    text: 'Categoria 3',
+    text: 'Brinquedos',
     link: '#categoria3'
   },
   {
-    text: 'Categoria 4',
+    text: 'Acessórios',
     link: '#categoria4'
   },
   {
-    text: 'Categoria 5',
+    text: 'Bebedouros',
     link: '#categoria5'
   },
   {
-    text: 'Categoria 6',
+    text: 'Areias',
     link: '#categoria6'
   },
   {
-    text: 'Categoria 7',
-    link: '#categoria7'
+    text: 'Shappos',
+    link: '#categoria6'
   }
 ]

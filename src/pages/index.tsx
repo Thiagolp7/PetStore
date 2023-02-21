@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import s from './Home.module.scss'
 import Header from '@/components/Header/'
 import Footer from '@/components/Footer'
@@ -8,8 +7,7 @@ import { categoriesBannersData, middleBannersData } from '@/resources/banners'
 import MiddleBanners from '@/components/Banners/MiddleBanners'
 import ProductShowcase from '@/components/ProductShowcase'
 import { productNews, productsHightlight } from '@/resources/product'
-
-const inter = Inter({ subsets: ['latin'] })
+import { CarouselBanner } from '@/components/CarouselBanner'
 
 export default function Home() {
   return (
@@ -22,6 +20,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className={s.main}>
+        <CarouselBanner />
         <CategoriesBanners banners={categoriesBannersData} />
         <ProductShowcase title="Novidades" products={productNews} />
         <MiddleBanners banners={middleBannersData} />
